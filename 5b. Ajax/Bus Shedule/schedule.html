@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bus Schedule</title>
+  <style>
+    #schedule { text-align: center; width: 400px; }
+    input { width: 120px; }
+    #info { background-color:aquamarine; border:1px solid black; margin:0.25em; }
+    .info { font-size: 1.5em; padding: 0.25em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+
+<body>
+<div id="schedule">
+  <div id="info"><span class="info">Not Connected</span></div>
+  <div id="controls">
+    <input id="depart" value="Depart" type="button" onclick="result.depart()">
+    <input id="arrive" value="Arrive" type="button" onclick="result.arrive()" disabled="true">
+  </div>
+</div>
+
+
+<script>
+  function solve() {
+    let currentStop = 'depot';
+    let nextStop = 'depot';
+    let url = "https://judgetests.firebaseio.com/schedule/";
+
+    
+    function depart(){
+        $('#depart').attr('disabled', true);
+        $('#arrive').attr('disabled', false);
+        $.ajax({url:url + currentStop +'.json', success: success, error: error});
+
+        function success(res){
+            nextStop = res.next;
+            $('#info').find('span').text(`Next stop ${res.name}`);
+        }
+        
+        function error(err){
+          $('#depart').attr('disabled', true);
+          $('#arrive').attr('disabled', true);
+          $('#info').find('span').text("Error");
+        }
+    }
+
+    function arrive(){
+        $('#depart').attr('disabled', false);
+        $('#arrive').attr('disabled', true);
+        $.ajax({url: url + currentStop + '.json', success, error});
+        
+        function success(res){
+          $('#info').find('span').text(`Arriving at ${res.name}`);
+          currentStop = nextStop;
+        }
+        function error(err){
+          $('#depart').attr('disabled', true);
+          $('#arrive').attr('disabled', true);
+          $('#info').find('span').text('Error');
+        }
+    }
+
+    return {
+      depart,
+      arrive
+    };
+  }
+
+  let result = solve();
+  
+
+</script>
+
+</body>
+
+
+</html>
