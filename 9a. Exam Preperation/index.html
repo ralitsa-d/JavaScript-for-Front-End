@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container-fluid bg-warning text-dark text-center p-2">
+        <h1>Company Codex</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-dark text-center pt-2">
+                <h1>
+                    Register Yourself
+                </h1>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="row p-4">
+            <div class="col-md-3 form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name...">
+            </div>
+            <div class="col-md-3 ml-auto form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name...">
+            </div>
+        </div>
+
+        <div class="row p-4">
+            <div class="col-md-3 form-group">
+                <label for="company">Company</label>
+                <input type="text" class="form-control" id="company" placeholder="Company...">
+            </div>
+            <div class="col-md-3 ml-auto form-group">
+                <label for="branch">Branch</label>
+                <input type="text" class="form-control" id="branch" placeholder="Branch...">
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col text-center">
+                <h1>
+                    Work Email
+                </h1>
+            </div>
+        </div>
+        <form>
+            <div class="row">
+                <div class="form-group col-8 mx-auto">
+                    <input disabled id="workEmail" type="text" class="form-control text-center" value=".@-.com" >
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container-fluid">
+        <hr>
+    </div>
+
+
+
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

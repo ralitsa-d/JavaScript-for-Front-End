@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Collapse</title>
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="row" style="padding-top: 80px;">
+            <div class="col-8 mx-auto">
+                <a href="#firstParagraph" class="btn btn-primary" data-toggle="collapse">HTML</a>
+                <p id="firstParagraph">Lorem, ipsum dolor sit amet consectetur adipisicing 
+                    elit. Nisi, suscipit reiciendis fugiat necessitatibus 
+                    id tempore. Perferendis labore nostrum consectetur ex 
+                    dolore animi accusantium aperiam a. Eum expedita modi 
+                    assumenda ipsam?</p>
+                <a href="#secondParagraph" class="btn btn-primary" data-toggle="collapse">CSS</a>
+                <p id="secondParagraph">Another journey chamber way yet females man. Way extensive and dejection get 
+                    delivered deficient sincerity gentleman age. Too end instrument possession 
+                    contrasted motionless. Calling offence six joy feeling. Coming merits and was 
+                    talent enough far. Sir joy northward sportsmen education. Discovery incommode 
+                    earnestly no he commanded if. Put still any about manor heard. 
+                    </p> 
+                <a href="#thirdParagraph" class="btn btn-primary" data-toggle="collapse">Bootstrap</a>
+                <p id="thirdParagraph">Do so written as raising parlors spirits mr elderly. Made late in of 
+                    high left hold. Carried females of up highest calling. Limits marked 
+                    led silent dining her she far. Sir but elegance marriage dwelling likewise 
+                    position old pleasure men. Dissimilar themselves simplicity no of contrasted 
+                    as. Delay great day hours men. Stuff front to do allow to asked he. </p>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="accordion">
+        <div class="card">
+
+            <div class="card-header" id="html">
+                <h5>
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#html1">
+                        HTML
+                    </button>
+                </h5>
+            </div>
+
+            <div class="collapse" aria-labelledby="html" id="html1" data-parent="#accordion">
+                    <p class="card-body">
+                    Hypertext Markup Language is the standard markup language for creating web 
+                    pages and web applications. With Cascading Style Sheets and JavaScript, it 
+                    forms a triad of cornerstone technologies for the World Wide Web.
+                    </p>
+                </div>
+
+            <div class="card-header" id="css">
+                <h5><button class="btn btn-primary" data-toggle="collapse" data-target="#css1"> CSS</button>
+                </h5>
+            </div>
+
+            <div class="collapse" aria-labelledby="css" id="css1" data-parent="#accordion">
+                    <p class="card-body">
+                        Cascading Style Sheets is a style sheet language used for describing the 
+                        presentation of a document written in a markup language like HTML. CSS is a 
+                        cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                    </p>
+                </div>
+
+            <div class="card-header" id="bootstrap">
+                <h5>
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#bootstrap1">
+                        Bootstrap
+                    </button>
+                </h5>
+            </div>
+
+                <div class="collapse" aria-labelledby="bootstrap" id="bootstrap1" data-parent="#accordion">
+                    <p class="card-body">
+                        Bootstrap is a free and open-source front-end framework (library) 
+                        for designing websites and web applications. It contains HTML- and 
+                        CSS-based design templates for typography, forms, buttons, navigation 
+                        and other interface components, as well as optional JavaScript extensions. 
+                        Unlike many web frameworks, it concerns itself with front-end development only.
+                    </p>
+                </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

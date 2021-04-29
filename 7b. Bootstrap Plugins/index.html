@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Job Application</title>
+
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="bootstrap-social-gh-pages/bootstrap-social.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="node_modules/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="node_modules/dropify/dist/css/dropify.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-9 mx-auto p-5">
+
+
+                <div class="jumbotron bg-info">
+
+                    <div id="wrapper">
+                            <h4 class="text-center text-light">JOB APPLICATION</h4>
+                            <h5 class="text-center text-light pb-4"><i>We Are Looking For Someone Like You!</i></h5>
+                        <div class="card">
+                            <div class="card-header bg-info" id="first">
+                                <h5 class="mb-0">
+                                    <button class="btn text-light btn-link collapsed" data-toggle="collapse" data-target="#first1"
+                                    aria-expanded="true" aria-controls="first1">
+                                        Enter your data
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div class="collapse" id="first1" aria-labelledby="first" data-parent="#wrapper">
+                                <div class="card-body">
+                                    <form>
+                                    <div class="form-group">
+                                        <label for="firstname">First Name</label>
+                                        <input class="form-control custom-input" id="firstname" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname">Last Name</label>
+                                        <input class="form-control custom-input" id="lastname" placeholder="Last Name">
+                                    </div>
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control custom-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="container">
+                                        <a class="btn btn-social btn-facebook text-light" id="clickFace">
+                                            <span class="fab fa-facebook" id="clicked"></span> Sign in with Facebook
+                                        </a>
+                                        <a class="btn btn-social btn-google text-light" id="clickGoogle">
+                                            <span class="fab fa-google"></span> Sign in with Google
+                                        </a>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header bg-info" id="second">
+                                <h5 class="mb-0" >
+                                    <button class="btn text-light btn-link collapsed" data-toggle="collapse" 
+                                    data-target="#second1" aria-expanded="false" aria-controls="second1">
+                                        Social Media Profiles
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div class="collapse" id="second1" aria-labelledby="second" data-parent="#wrapper">
+                                <div class="card-body">
+                                    <div class="container-fluid col-10 float-left">
+                                    <div class="input-group input-group-sm mb-3 float-left">
+                                        <div class="input-group-prepend">
+                                                <a class="btn btn-social-icon btn-twitter text-light">
+                                                    <span class="fab fa-twitter"></span>
+                                                </a>
+                                        </div>
+                                        <input type="text" class="form-control custom-input" placeholder="Twitter account" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                                <a class="btn btn-social-icon btn-facebook text-light">
+                                                    <span class="fab fa-facebook"></span>
+                                                </a>
+                                        </div>
+                                        <input type="text" class="form-control custom-input" placeholder="Facebook account" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <a class="btn btn-social-icon btn-github text-light">
+                                                <span class="fab fa-github"></span>
+                                            </a>
+                                        </div>
+                                        <input type="text" class="form-control custom-input" placeholder="Github account" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <a class="btn btn-social-icon btn-linkedin text-light">
+                                                <span class="fab fa-linkedin"></span>
+                                            </a>
+                                        </div>
+                                        <input type="text" class="form-control custom-input" placeholder="Linkedin account" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    </div>
+                                            
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header bg-info" id="third">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link text-light collapsed" data-toggle="collapse" data-target="#third1"
+                                    aria-expanded="false" aria-controls="third1">
+                                        Upload CV
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div class="collapse" id="third1" aria-labelledby="third" data-parent="#wrapper">
+                                <div class="card-body">
+                                    <div class="container" id="drop">
+                                        <input type="file" id="input-file-now" class="dropify">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container col-3 mx-auto pt-5">
+                            <button class="btn btn-light btn-outline-light mx-auto" id="submit">
+                                SUBMIT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="node_modules/bootstrap-sweetalert/dist/sweetalert.js"></script>
+    <script src="node_modules/dropify/dist/js/dropify.min.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>

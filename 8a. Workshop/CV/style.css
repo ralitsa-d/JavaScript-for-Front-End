@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+}
+
+body .container-fluid {
+  background-image: url("img/5257b6c12d89875.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+body .container img .custom {
+  width: 100%;
+  height: auto;
+}
+
+body .container button .custom {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  opacity: 0.5;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body .container button:hover {
+  opacity: 1;
+  opacity: 0.5;
+}
+
+body footer {
+  height: 55px;
+}
+/*# sourceMappingURL=style.css.map */

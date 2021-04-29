@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modify me</title>
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center text-danger pt-3">
+            <div class="col-3 mx-auto">
+                <h1 class='h1'>Modify me</h1>
+            </div>
+        </div>
+
+        <hr class="hr bg-danger" style="height: 2px;">
+
+        <div class="row">
+            <div class="col-3 mx-auto text-danger">
+                <h3 class="h3 text-center">Personal Info</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 mx-auto form-group mx-auto" id="firstParent">
+                <h5 class="text-danger h5 text-center">First Name</h5>
+                <h4 class="h4 text-center" id="firstName">Pesho</h4>
+            </div>
+            <div class="col-3 mx-auto form-group" id="secondParent">
+                <h5 class="text-danger text-center h5">Last Name</h5>
+                <h4 class="h4 text-center" id="lastName">Peshov</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 mx-auto form-group mx-auto" id="thirdParent">
+                <h5 class="text-danger h5 text-center">Phone Number</h5>
+                <h4 class="h4 text-center" id="phoneNumber">555-333-4545</h4>
+            </div>
+            <div class="col-3 mx-auto form-group" id="forthParent">
+                <h5 class="text-danger text-center h5">UCL</h5>
+                <h4 class="h4 text-center" id="ucl">9311124003</h4>
+            </div>
+        </div>
+
+        <hr class="hr bg-danger" style="height: 2px;">
+
+        <div class="row pb-1">
+            <div class="col-3 mx-auto text-danger">
+                <h3 class="h3 text-center">Team and Position</h3>
+            </div>
+        </div>
+
+        <div class="row py-3">
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input mx-auto" type="radio" name="exampleRadios" id="support" value="option1">
+                    <label class="form-check-label ml-5" for="support">
+                        Support 
+                    </label>
+                </div>        
+            </div>
+            <div class="col">
+                <div class="form-chec">
+                    <input class="form-check-input mx-auto" type="radio" name="exampleRadios" id="crm" value="option2">
+                    <label class="form-check-label ml-5" for="crm">
+                        CRM
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input mx-auto" type="radio" name="exampleRadios" id="marketing" value="option3">
+                    <label class="form-check-label ml-5" for="marketing">
+                        Marketing
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input mx-auto" type="radio" name="exampleRadios" id="development" value="option4">
+                    <label class="form-check-label ml-5" for="development">
+                        Development
+                    </label>
+                </div>    
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input mx-auto" type="radio" name="exampleRadios" id="other" value="option5" checked>
+                    <label class="form-check-label ml-5" for="other">
+                        Other
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <hr class="hr bg-danger" style="height: 2px;">
+            </div>
+        </div>
+
+
+        <!-- DYNAMIC Other-->
+        <div class="row py-4" id='forOther'>
+            <div class="col">
+            <div class="form-check">
+                <input class="form-check-input mx-auto" type="radio" name="exampleRadios1" id="teamlead" value="option2">
+                <label class="form-check-label ml-5" for="teamlead" id="1">
+                    Team Lead
+                </label>
+            </div>    
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input mx-auto" type="radio" name="exampleRadios1" id="regemployee" value="option2" checked>
+                    <label class="form-check-label ml-5" for="regemployee" id="2">
+                        Regular Employee
+                    </label>
+                </div>    
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input mx-auto" type="radio" name="exampleRadios1" id="intern" value="option2">
+                    <label class="form-check-label ml-5" for="intern" id="3"> 
+                        Intern
+                    </label>
+                </div>    
+            </div>
+        </div>
+
+        <!-- Support -->
+        <!-- <div class="row py-4" id='forSupport'>
+                <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input mx-auto" type="radio" name="exampleRadios2" id="techsupport" value="option2">
+                    <label class="form-check-label ml-5" for="techsupport">
+                            Tech Support 
+                    </label>
+                </div>    
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input mx-auto" type="radio" name="exampleRadios2" id="medsupport" value="option2" checked>
+                        <label class="form-check-label ml-5" for="medsupport">
+                                Medical Support   
+                        </label>
+                    </div>    
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input mx-auto" type="radio" name="exampleRadios2" id="assistantsupport" value="option2">
+                        <label class="form-check-label ml-5" for="assistantsupport">
+                                Assistant Support 
+                        </label>
+                    </div>    
+                </div>
+        </div>
+
+            <!-- CRM -->
+        <!-- <div class="row py-4 d-none" id='forCRM'>
+                <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input mx-auto" type="radio" name="exampleRadios3" id="communityman" value="option2">
+                    <label class="form-check-label ml-5" for="communityman">
+                            Community Manager
+                    </label>
+                </div>    
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input mx-auto" type="radio" name="exampleRadios3" id="ccman" value="option2" checked>
+                        <label class="form-check-label ml-5" for="ccman">
+                                Customer Care Manager
+                        </label>
+                    </div>    
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input mx-auto" type="radio" name="exampleRadios3" id="laofficer" value="option2">
+                        <label class="form-check-label ml-5" for="laofficer">
+                                Lead Administrative Officer
+                        </label>
+                    </div>    
+                </div>
+            </div> -->
+
+            <!-- Marketing -->
+            <!-- <div class="row py-4 d-none" id='forMarketing'>
+                    <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input mx-auto" type="radio" name="exampleRadios4" id="pr" value="option2">
+                        <label class="form-check-label ml-5" for="pr">
+                                PR Manager
+                        </label>
+                    </div>    
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input mx-auto" type="radio" name="exampleRadios4" id="socialman" value="option2" checked>
+                            <label class="form-check-label ml-5" for="socialman">
+                                    Social Media Manager
+                            </label>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input mx-auto" type="radio" name="exampleRadios4" id="marketingspec" value="option2">
+                            <label class="form-check-label ml-5" for="marketingspec">
+                                    Marketing Specialist
+                            </label>
+                        </div>    
+                    </div>
+                </div> -->
+
+
+                <!-- Development -->
+                <!-- <div class="row py-4 d-none" id='forDevelopment'>
+                        <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input mx-auto" type="radio" name="exampleRadios5" id="junior" value="option2">
+                            <label class="form-check-label ml-5" for="junior">
+                                    Junior Developer
+                            </label>
+                        </div>    
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input mx-auto" type="radio" name="exampleRadios5" id="regdev" value="option2" checked>
+                                <label class="form-check-label ml-5" for="regdev">
+                                        Regular Developer
+                                </label>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input mx-auto" type="radio" name="exampleRadios5" id="sendev" value="option2">
+                                <label class="form-check-label ml-5" for="sendev">
+                                        Senior Developer
+                                </label>
+                            </div>    
+                        </div>
+                    </div> -->
+
+        <hr class="hr bg-danger" style="height: 2px;">
+
+        <div class="row pt-2">
+            <div class="col">
+                <button type="button" id="submit" class="btn btn-danger float-right mr-5">Submit</button>
+            </div>
+            <div class="col">
+                <button type="button" id="reset" class="btn btn-danger float-left ml-5">Reset</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

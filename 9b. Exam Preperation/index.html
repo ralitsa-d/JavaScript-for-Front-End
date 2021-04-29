@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log Horizon</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="h1 text-white bg-dark text-center p-3">
+            Log Horizon
+        </h1>
+    </header>
+
+    <main>
+        <section class="row">
+            <form class="form-inline mx-auto" id="form">
+                <div class="form-group m-3" id="div">
+                    <input type="text" class="form-control" id="usernameInput" aria-describedby="emailHelp" 
+                    placeholder="Username">
+                </div>
+                <button type="submit" id="username" class="btn btn-primary btn-dark">Set Username</button>
+            </form>
+        </section>
+
+        <hr class="hr bg-dark" style="height: 2px;">
+
+        <section>
+            <h2 class="h2 text-dark text-center p-3 ">
+                Log a Message
+            </h2>
+
+            <div class="container">
+                <section class="row mx-auto">
+                    <div class="col-6">
+                        <div class="form-group mx-sm-3">
+                            <input type="text" class="form-control" id="message" placeholder="Message">
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-4 ">
+                        <button type="button" class="btn btn-outline-success ">
+                            <input  type="radio" id="inlineRadio1" name="blankRadio">
+                            Success
+                        </button>
+                        <button type="button" class="btn btn-outline-info ">
+                                <input  type="radio" name="blankRadio" id="inlineRadio2" checked>
+                                Info
+                        </button>
+                        <button type="button" class="btn btn-outline-danger">
+                                <input type="radio" name="blankRadio" id="inlineRadio3">
+                                Error
+                        </button>
+                    </div>
+                    
+                    <div class=" border-left border-dark">
+                        <button type="button" class="btn btn-dark ml-3" id="logBtn">
+                            Log
+                        </button>
+                    </div>
+                    
+                    
+                </section>
+            </div>
+            <hr class="hr bg-dark" style="height: 2px;">
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <h2 class="h2 mx-auto">Logs</h2>
+            </div>
+            <div class="row" id="logs"> 
+                <h4 class="h4 text-muted mx-auto" id="msgtodelete">There are currently no logs in the database...</h4>
+            </div>
+            
+
+        </div>
+        
+    </main>
+
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
